@@ -67,4 +67,17 @@ public class BoardController {
 		bService.boardReplyInsert(pno, vo);
 		return "redirect:../board/list.do";
 	}
+	
+	//수정하기 
+	@GetMapping("board/update.do")
+	public String board_update(int no, Model model) {
+		BoardVO vo=bService.boardDetailData(no);
+		model.addAttribute("main_jsp", "../board/update.jsp");
+		return "main/main";
+	}
+	@PostMapping("board/update_ok.do")
+	public String board_update_ok(int no, BoardVO vo) {
+		bService.boardUpdateData(no, vo);
+		return "redirect:../board/detail.do";
+	}
 }

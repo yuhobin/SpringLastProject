@@ -29,7 +29,7 @@ import lombok.Data;
 		------ Transaction
 		
 		insert => commit(X) 
-		insert => commit(X) 
+		insert => commit(X) 	
 		insert => commit(X)
 		commit
 		

@@ -51,7 +51,6 @@ public interface BoardMapper {
 			+"#{group_id}, #{group_step}, #{group_tab}, #{root}, #{depth})")
 	public void boardReplyInsert(BoardVO vo);
 	// 4. UPDATE
-	
 	@Update("UPDATE springReplyBoard SET "
 			+"depth=depth+1 "
 			+"WHERE no=#{no}")
@@ -68,5 +67,14 @@ public interface BoardMapper {
 	 *  depth : 답변이 몇개인지 확인
 	 */
 	// 수정
+	@Update("UPDATE springReplyBoard SET "
+			+"no=#{no},"
+			+"name=#{name},"
+			+"subject=#{subject},"
+			+"content=#{content},"
+			+"pwd=#{pwd} "
+			+"WHERE no=#{no}")
+	public void boardUpdateData(BoardVO vo);
+	
 	// 삭제	=> Transaction
 }
