@@ -21,7 +21,7 @@
 						<img src="${vo.goods_poster }" style="width: 290px; height: 330px">
 					</td>
 					<td colspan="2">
-						<h3>${vo.goods_name }&nbsp;<span style="color:orange;">${vo.goods_discount }</span></h3>
+						<h3 style="color: blue;">${vo.goods_name }&nbsp;<span style="color:orange;">${vo.goods_discount }</span></h3>
 					</td>
 				</tr>
 				<tr>
