@@ -16,6 +16,7 @@ p {
 	white-space: nowrap;
 	text-overflow: ellipsis;
 }
+
 </style>
 </head>
 <body>
