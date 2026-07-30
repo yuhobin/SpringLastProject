@@ -17,7 +17,7 @@
       <li><a href="../goods/goods.do">스토어</a></li>
       <li><a href="#" style="color: red">레시피</a></li>
       <li><a href="#" style="color: red">답변형 게시판</a></li>
-      <li><a href="#" style="color: red">마이페이지</a></li>
+      <li><a href="#" style="color: blue">마이페이지</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="#"><span class="glyphicon glyphicon-user"></span>Login</a></li>
