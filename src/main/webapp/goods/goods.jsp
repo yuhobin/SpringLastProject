@@ -54,9 +54,9 @@ p {
 				<h3>조회 기록이 없습니다</h3>
 			</c:if>
 			<c:if test="${size>0 }">
-				<c:forEach var="ckvo" items="${ckList }">
+				<c:forEach var="cvo" items="${cList }">
 					<div style="width: 100px; height: 100px; margin-left: 3px; display: inline-block;">
-						<img src="${ckvo.goods_poster}" style="width: 100px; height: 100px;">
+						<img src="${cvo.goods_poster}" style="width: 100px; height: 100px;">
 					</div>
 				</c:forEach>
 			</c:if>

@@ -121,7 +121,7 @@ public class MainController {
 		
 		model.addAttribute("main_jsp", "../goods/goods.jsp");
 		
-		List<GoodsVO> ckList=new ArrayList<GoodsVO>();
+		List<GoodsVO> cList=new ArrayList<GoodsVO>();
 		Cookie[] cookies=request.getCookies();
 		if(cookies!=null) {
 			for(int i=cookies.length-1; i>=0; i--) {
@@ -131,12 +131,12 @@ public class MainController {
 					
 					String no=cookies[i].getValue();
 					GoodsVO vo=gService.goodsDetailData(Integer.parseInt(no));
-					ckList.add(vo);
+					cList.add(vo);
 				}
 			}
 		}
-		model.addAttribute("cList", ckList);
-		model.addAttribute("size", ckList.size());
+		model.addAttribute("cList", cList);
+		model.addAttribute("size", cList.size());
 		
 		return "main/main";
 	}
